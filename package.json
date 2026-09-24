@@ -1,0 +1,25 @@
+{
+  "name": "jitsyxcsa-web",
+  "version": "1.0.0",
+  "description": "Landing de una página con autoevaluación de riesgo (basada en CIS Controls v8, IG1) y formulario de contacto. Hecha con React + Vite, publicada gratis en GitHub Pages, con los datos guardados en Supabase.",
+  "main": "vite.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "lucide-react": "^1.47.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.0"
+  }
+}
