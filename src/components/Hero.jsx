@@ -1,18 +1,21 @@
-import { Search, ShieldCheck, Clock, ArrowRight } from 'lucide-react'
-import heroImg from '../assets/hero-banner.png'
+import { ArrowRight, Clock, Search, ShieldCheck } from "lucide-react";
+
+const heroImg = Object.values(
+  import.meta.glob("../assets/hero-banner.*", { eager: true, import: "default" })
+)[0];
 
 const FEATURES = [
-  { icon: Search, text: 'Análisis técnico' },
-  { icon: ShieldCheck, text: 'Recomendaciones claras' },
-  { icon: Clock, text: 'Resultados en 48 horas' },
-]
+  { icon: Search, text: "Análisis técnico" },
+  { icon: ShieldCheck, text: "Recomendaciones claras" },
+  { icon: Clock, text: "Resultados en 48 horas" },
+];
 
-const VERBS = ['Prevenir', 'Detectar', 'Proteger', 'Avanzar']
+const VERBS = ["Prevenir", "Detectar", "Proteger", "Avanzar"];
 
 export default function Hero() {
   return (
     <section id="inicio" className="hero">
-      <img className="hero__img" src={heroImg} alt="" />
+      {heroImg && <img className="hero__img" src={heroImg} alt="" />}
       <div className="container hero__inner">
         <div className="hero__content">
           <h1 className="hero__title">
@@ -43,10 +46,10 @@ export default function Hero() {
           </ul>
           <blockquote className="hero__quote">
             <p>“La seguridad no es un producto, es un proceso continuo.”</p>
-            <cite>Bruce Schneier</cite>
+            Bruce Schneier
           </blockquote>
         </div>
       </div>
     </section>
-  )
+  );
 }
