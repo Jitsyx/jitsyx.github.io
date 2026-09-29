@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
+import VideoDemo from './components/VideoDemo'
 import Assessment from './components/Assessment'
 import Benefits from './components/Benefits'
 import ContactForm from './components/ContactForm'
@@ -14,6 +15,7 @@ export default function App() {
       <main id="main">
         <Hero />
         <Services />
+        <VideoDemo />
         <Assessment />
         <Benefits />
         <ContactForm />
